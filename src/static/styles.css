@@ -60,9 +60,17 @@ section h3 {
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border: 1px solid #e0e4f0;
+  border-left: 4px solid #3949ab;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(26, 35, 126, 0.06);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.activity-card:hover {
+  box-shadow: 0 5px 14px rgba(26, 35, 126, 0.12);
+  transform: translateY(-2px);
 }
 
 .activity-card h4 {
@@ -72,6 +80,56 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 6px;
+  background-color: #f1f4ff;
+}
+
+.participants h5 {
+  margin-bottom: 8px;
+  color: #283593;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.participant-list {
+  padding-left: 20px;
+  color: #444b63;
+}
+
+.participant-list li {
+  margin: 4px 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-list .empty-participants {
+  color: #747b91;
+  font-style: italic;
+  list-style: none;
+}
+
+.cancel-signup {
+  margin-left: 10px;
+  padding: 4px 8px;
+  background-color: #fff;
+  color: #b3261e;
+  border: 1px solid #e6aaa6;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.cancel-signup:hover:not(:disabled) {
+  background-color: #b3261e;
+  color: #fff;
+}
+
+.cancel-signup:disabled {
+  cursor: wait;
+  opacity: 0.6;
 }
 
 .form-group {
